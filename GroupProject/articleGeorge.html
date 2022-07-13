@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Article</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="./jquery3.6.0.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+        <style>
+            .bg-1 {
+                background-color: #1abc9c; /*Green*/
+                color: #000000;
+            }
+            .bg-2 {
+                background-color: #474e5d; /* Dark Blue */
+                color: #ffffff;
+            }
+            .bg-3 {
+                background-color: #ffffff; /* White */
+                color: #555555;
+            }
+            .bg-4 { 
+                background-color: #2f2f2f;
+                color: #ffffff;
+            }
+            .bg-5 { 
+                background-color: blanchedalmond;
+                color: #000000;
+            }
+            .bg-6 {
+                background-color: darkgreen;
+            }
+            .container-fluid {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .navbar {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
+            }
+            .navbar-nav li a {
+                color: white !important;
+            }
+            .navbar-nav li a:hover {
+                color: #1abc9c !important;
+            }
+            body {
+                font: 20px "Montserrat", sans-serif;
+                line-height: 1.8;
+                color: #f5f6f7;
+            }
+            p {font-size: 16px;}
+            .navhead {
+                background-color: whitesmoke;
+            }
+            .ourNav {
+                height: 60px;
+                text-align: center;
+                color:whitesmoke !important;
+                display: flex;
+                justify-content: space-around;
+            }
+            .leftside {
+                width: 80%;
+            }
+            .rightside {
+                width: 19%;
+            }
+            h4 {
+                color: black
+            }
+            .gambar {
+                width: 40%;
+            }
+            .tulisan {
+                width: 55%;
+            }
+            .socicon {
+                margin-right: 10px;
+            }
+            .qrcode {
+                position: absolute;
+                bottom: 10px;
+                width: 93%;
+            }
+            .row {
+                display: flex;
+            }
+            .col {
+                flex: 1;
+                padding: 1em;
+            }
+            form {
+                color:#000000
+            }
+            .container {
+                width: 85%;
+            }
+            
+
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+            opacity: 0;
+            transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+            }
+            .btn-lg {
+            width: 100%;
+            margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+            font-size: 150px;
+            }
+        }
+        </style>
+
+        
+    </head>
+    <body>
+        <!-- Header - Logo, title, search -->
+        <nav class="navbar navbar-default navhead">
+            <div class="container">
+                <div class="navbar-header" style="width: auto;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="ourWebsite.html">
+                    <img class="navbar-brand" src="logo.jpeg" alt="" style="
+                        width: 100px;
+                        height: 100px;
+                        padding-top: 0px;
+                        padding-left: 0px;
+                        padding-bottom: 0px;
+                        padding-right: 0px;
+                        margin-right: 20px;
+                        "></a>
+                </div>
+                <div class="navbar-brand">Endangered Animals in Malaysia</div>
+
+                <a href="https://www.instagram.com/natgeo/"><img class="navbar-right btn-default btn-lg socicon" src="iglogo.png" alt="" style="width: 60px"></a>
+                <a href="https://www.facebook.com/natgeowild/"><img class="navbar-right btn-default btn-lg socicon" src="fblogo.png" alt="" style="width: 60px"></a>
+                <a href="https://twitter.com/NatGeo"><img class="navbar-right btn-default btn-lg socicon" src="twlogo.png" alt="" style="width: 60px"></a>
+
+            </div>
+        </nav>
+
+        <!-- NavBar -->
+        <div class="bg-2 text-center ourNav" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="ourWebsite.html" style="margin-left: 20px;">HOME</a></li>
+                <li><a href="statistics.html">STATISTIC</a></li>
+                <li><a href="volunteering.html">VOLUNTEERING</a></li>
+                <li><a href="#">DONATION</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="row content">
+            <!-- Left side nav -->
+            <div class=" text-center leftside col-sm-4">
+                
+                <div class="row bg-1">
+                    <div class="col-sm-4 gambar" style="align-items: center; width: 100%; margin: 0 10px 0 10px;">
+                        <h3><strong>Lonesome George</strong></h3>
+                        <img src="george.jpg" class="img-responsive img-circle" width="500px" style="display:inline" alt="Owl">
+                        <br><br>
+                        <h3>George was first seen on the island of Pinta on November 1, 1971, by Hungarian malacologist József Vágvölgyi. The island's vegetation had been devastated by introduced feral goats, and the indigenous C. abingdonii population had been reduced to a single individual. It is thought that he was named after a character played by American actor George Gobel.[10] He was relocated for his own safety to the Charles Darwin Research Station on Santa Cruz Island, where he spent his life under the care of Fausto Llerena, for whom the tortoise breeding center is named.
+                            <br><br>
+                            It was hoped that more Pinta Island tortoises would be found, either on Pinta Island or in one of the world's zoos, similar to the discovery of the Española Island male in San Diego. No other Pinta Island tortoises were found. The Pinta Island tortoise was pronounced functionally extinct, as George was in captivity.</h3>
+                            <br>
+                            <h2><strong>Fascinating Lonesome George Facts You Probably Didn’t Know</strong></h2>
+                            <br>
+                            <h3><strong>
+                                1. This turtoises are the only tortoises with distinct shell shapes.
+                            </strong></h3>
+                            <p>Galapagos tortoises are the only tortoises with distinct shell shapes. Lonesome George's shell was a "saddleback," meaning it is slightly dipped near the front, making it look like a saddle. Other Galapagos tortoises have a dome-shaped shell. Still others have characteristics of both saddlebacks and domes, with overall flatter shells. These are known as "tabletop" shells.
+                            </p>
+                                <br>
+
+                            <h3><strong>
+                                2. It's saddleback is slightly smaller than their dome-shelled relatives.
+                            </strong></h3>
+                            <p>Saddleback tortoises like Lonesome George are slightly smaller than their dome-shelled relatives, and have longer necks. Saddlebacks are native to the Galapagos' drier islands, where less vegetation grows close to the ground. Scientists speculate that natural selection favored long-necked saddlebacks, who would better stretch their necks to reach food, such as the fruit of the prickly-pear cactus. </p>
+
+                                <br>
+                            <h3><strong>
+                                3. It's known as endangered species since mid-20th century.
+                            </strong></h3>
+                            <p>In the mid-20th century, introduced species (mostly goats) out-competed native species like Lonesome George for food on the Galapagos Islands. Today, all eight Galapagos tortoise species are classified as vulnerable or endangered. Lonesome George, however, was the only Galapagos tortoise extinct in the wild. Today, the Pinta Island tortoise is entirely extinct.
+                                </p>
+
+
+                        <br>
+
+                    </div>
+                </div>
+               
+
+            </div>
+
+            <!-- Right side nav -->
+            <div class=" text-center rightside col-sm-4" 
+                 style="background-image: url(bguiiii.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                
+                <br><br>
+                    <form class="example" action="https://www.w3schools.com//action_page.php" style="margin:auto;max-width:300px">
+                      <input type="text" placeholder="Search.." name="search" style="width: 100%;">
+                      <br><br>
+                      <button type="submit" class="btn-default btn-lg" style="width: 60%;">
+                        <span class="glyphicon glyphicon-search"></span> Search</button>
+                    </form>
+                    <br>
+                
+                <div class="qrcode" style="width: 100%;">
+                    <h3>Contact Us!</h3>
+                    <img src="contact us.png" alt="" style="width: 70%">
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid bg-4 text-center">
+            <h3></h3>
+        </div>
+        
+        <div class="container-fluid bg-3 text-center">
+            <h3><strong>Your impact begins today!</strong></h3>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+                    <p>Help save big cats
+                        and their habitats</p>
+                    <img src="Leopard.jpg" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Protect marine life
+                        and ecosystems</p>
+                    <img src="Diver.jpg" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Protect fishes and underwater animals</p>
+                    <img src="ikan.png" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="container-fluid bg-4 text-center">
+            <p>This website was made by : Group 8</p> 
+        </footer> 
+      
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+        
+                // Store hash
+                var hash = this.hash;
+        
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 900, function(){
+            
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            });
+            
+            $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+        
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+            });
+        })
+
+        </script>
+        
+    </body>
+
+
+</html>

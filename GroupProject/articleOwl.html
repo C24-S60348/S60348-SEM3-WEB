@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Article</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="./jquery3.6.0.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+        <style>
+            .bg-1 {
+                background-color: #1abc9c; /*Green*/
+                color: #000000;
+            }
+            .bg-2 {
+                background-color: #474e5d; /* Dark Blue */
+                color: #ffffff;
+            }
+            .bg-3 {
+                background-color: #ffffff; /* White */
+                color: #555555;
+            }
+            .bg-4 { 
+                background-color: #2f2f2f;
+                color: #ffffff;
+            }
+            .bg-5 { 
+                background-color: blanchedalmond;
+                color: #000000;
+            }
+            .bg-6 {
+                background-color: darkgreen;
+            }
+            .container-fluid {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .navbar {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
+            }
+            .navbar-nav li a {
+                color: white !important;
+            }
+            .navbar-nav li a:hover {
+                color: #1abc9c !important;
+            }
+            body {
+                font: 20px "Montserrat", sans-serif;
+                line-height: 1.8;
+                color: #f5f6f7;
+            }
+            p {font-size: 16px;}
+            .navhead {
+                background-color: whitesmoke;
+            }
+            .ourNav {
+                height: 60px;
+                text-align: center;
+                color:whitesmoke !important;
+                display: flex;
+                justify-content: space-around;
+            }
+            .leftside {
+                width: 80%;
+            }
+            .rightside {
+                width: 19%;
+            }
+            h4 {
+                color: black
+            }
+            .gambar {
+                width: 40%;
+            }
+            .tulisan {
+                width: 55%;
+            }
+            .socicon {
+                margin-right: 10px;
+            }
+            .qrcode {
+                position: absolute;
+                bottom: 10px;
+                width: 93%;
+            }
+            .row {
+                display: flex;
+            }
+            .col {
+                flex: 1;
+                padding: 1em;
+            }
+            form {
+                color:#000000
+            }
+            .container {
+                width: 85%;
+            }
+            
+
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+            opacity: 0;
+            transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+            }
+            .btn-lg {
+            width: 100%;
+            margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+            font-size: 150px;
+            }
+        }
+        </style>
+
+        
+    </head>
+    <body>
+        <!-- Header - Logo, title, search -->
+        <nav class="navbar navbar-default navhead">
+            <div class="container">
+                <div class="navbar-header" style="width: auto;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="ourWebsite.html">
+                    <img class="navbar-brand" src="logo.jpeg" alt="" style="
+                        width: 100px;
+                        height: 100px;
+                        padding-top: 0px;
+                        padding-left: 0px;
+                        padding-bottom: 0px;
+                        padding-right: 0px;
+                        margin-right: 20px;
+                        "></a>
+                </div>
+                <div class="navbar-brand">Endangered Animals in Malaysia</div>
+
+                <a href="https://www.instagram.com/natgeo/"><img class="navbar-right btn-default btn-lg socicon" src="iglogo.png" alt="" style="width: 60px"></a>
+                <a href="https://www.facebook.com/natgeowild/"><img class="navbar-right btn-default btn-lg socicon" src="fblogo.png" alt="" style="width: 60px"></a>
+                <a href="https://twitter.com/NatGeo"><img class="navbar-right btn-default btn-lg socicon" src="twlogo.png" alt="" style="width: 60px"></a>
+
+            </div>
+        </nav>
+
+        <!-- NavBar -->
+        <div class="bg-2 text-center ourNav" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="ourWebsite.html" style="margin-left: 20px;">HOME</a></li>
+                <li><a href="statistics.html">STATISTIC</a></li>
+                <li><a href="volunteering.html">VOLUNTEERING</a></li>
+                <li><a href="#">DONATION</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="row content">
+            <!-- Left side nav -->
+            <div class=" text-center leftside col-sm-4">
+                
+                <div class="row bg-4">
+                    <div class="col-sm-4 gambar" style="align-items: center; width: 100%; margin: 0 10px 0 10px;">
+                        <h3><strong>Northern spotted owl</strong></h3>
+                        <img src="owl.jpg" class="img-responsive img-circle" width="500px" style="display:inline" alt="Owl">
+                        <br><br>
+                        <h3>Northern spotted owls have dark brown plumage with white spots and no ear tufts. They are typically around sixteen to nineteen inches in length and one to one and one sixth pounds. Females are about 10-20% larger than males. Their wingspan is approximately 42 inches. They are a mainly nocturnal species, and form long-term pair bonds. While most owls have yellow to red-orange colored eyes, northern spotted owls are one of the few owls with darkish to black-colored eyes.</h3>
+                            <br>
+                            <h2><strong>Fascinating Owl Facts You Didn’t Know</strong></h2>
+                            <br>
+                            <h3><strong>
+                                1. An owl’s flattened face funnels sound to their ears
+                            </strong></h3>
+                            <p>Do owls have good hearing? Owls have flattened facial disks that funnel sound to their ears so that they can detect even the slightest noise. The sound that is funneled to their ears is magnified as much as 10 times to help owls hear the kinds of noises humans can’t hear. 
+                                <br><br>
+                                Owls are known to have extremely good hearing, and in the case of the Northern Hawk Owl, it is able to hear prey as much as 12 inches under the snow. The owl’s hearing is much more acute at certain frequencies enabling it to hear even subtle movement of their prey in leaves or undergrowth.
+                            </p>
+                                <br>
+
+                            <h3><strong>
+                                2. Not all owls are nocturnal
+                            </strong></h3>
+                            <p>Are owls nocturnal? While famous for having nocturnal lifestyles, not all owls happen to be night owls. Not all owls are nocturnal, as some are either diurnal or crespecular, meaning that they are dawn and dusk hunters. Examples of diurnal owls include the northern hawk owl, the great gray owl (Strix nebulosa), and the northern pygmy owl (Glaucidum gnoma). </p>
+
+                                <br>
+                            <h3><strong>
+                                3. Owls poop through their mouth
+                            </strong></h3>
+                            <p>Do owls poop? There are two ways for owls to poop. Half of their waste goes out their back end, and the other half is coughed out of their mouth. How do owls poop? Regular owl poop is white uric acid and feces, which are excreted through the cloaca, which is also used for mating and laying eggs. 
+                                <br><br>
+                                Round brown pellets are formed in the digestive process and are coughed up 6 to 10 hours after consuming a meal. Before producing a pellet, owls will take a pained expression, closing their eyes and narrowing their facial disk. After extending their neck forward, they vomit the pellet out.
+                                </p>
+
+
+                        <br>
+
+                    </div>
+                </div>
+               
+
+            </div>
+
+            <!-- Right side nav -->
+            <div class=" text-center rightside col-sm-4" 
+                 style="background-image: url(bguiiii.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                
+                <br><br>
+                    <form class="example" action="https://www.w3schools.com//action_page.php" style="margin:auto;max-width:300px">
+                      <input type="text" placeholder="Search.." name="search" style="width: 100%;">
+                      <br><br>
+                      <button type="submit" class="btn-default btn-lg" style="width: 60%;">
+                        <span class="glyphicon glyphicon-search"></span> Search</button>
+                    </form>
+                    <br>
+                
+                <div class="qrcode" style="width: 100%;">
+                    <h3>Contact Us!</h3>
+                    <img src="contact us.png" alt="" style="width: 70%">
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid bg-4 text-center">
+            <h3></h3>
+        </div>
+        
+        <div class="container-fluid bg-3 text-center">
+            <h3><strong>Your impact begins today!</strong></h3>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+                    <p>Help save big cats
+                        and their habitats</p>
+                    <img src="Leopard.jpg" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Protect marine life
+                        and ecosystems</p>
+                    <img src="Diver.jpg" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Protect fishes and underwater animals</p>
+                    <img src="ikan.png" class="img-responsive" style="width: 100%;" alt="Image">
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="container-fluid bg-4 text-center">
+            <p>This website was made by : Group 8</p> 
+        </footer> 
+      
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+        
+                // Store hash
+                var hash = this.hash;
+        
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 900, function(){
+            
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            });
+            
+            $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+        
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+            });
+        })
+
+        </script>
+        
+    </body>
+
+
+</html>
